@@ -1,0 +1,215 @@
+@charset "ISO-8859-1";
+*{
+	padding:0px;
+	margin:0px;
+}
+:root{
+	--clr-neon: hsl(317 100% 54%);
+}
+.body
+{  
+	background-image: url("BG/Lm1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 20s 5s forwards;
+    animation-iteration-count: infinite;
+}
+@Keyframes slide{
+0% {
+    background-image: url(BG/Lm1.jpg);
+}
+25% {
+    background-image: url(BG/Ronaldo.jpg);
+}
+50% {
+    background-image: url(BG/Zlatan2.jpg);
+}
+75% {
+    background-image: url(BG/Ney2.jpg);
+}
+100% {
+    background-image: url(BG/Lm1.jpg);
+}
+}
+.form
+{
+    text-align: center;
+    background: rgba( 255, 255, 255, 0.35 );
+    border: 1px solid black;
+    padding: 28px 62px;
+    margin: 7rem 30rem;
+    width: 197px;
+    font-family: sans-serif;
+    font-size: inherit;
+    color: white;
+    font-weight: 800;
+    box-shadow: 0 0 0.5em 0.15em black;
+    animation:swipe 5s 0s forwards;
+}
+@Keyframes swipe
+{
+	0%
+	{
+	   transform:translatey(-43vw);
+	}
+	50%
+	{
+	   transform:translatey(0vw);
+	}
+}
+h1
+{
+	margin: revert;
+    width: initial;
+    text-align: center;
+    border-right: ridge;
+    background: white;
+    color: black;
+    border-block-style:solid;
+    border-right:indigo;
+    cursor:default;
+    transition:0.5s linear;
+}
+h1:hover{
+	transform:scale(1.1);
+}
+h3{
+    color: white;
+    text-shadow: 0 0 0.25rem black;
+}
+input
+{
+    text-align: center;
+    margin: 16px 0px;
+    padding: 5px 0px;
+    font-weight: 500;
+    font-size: initial;
+    color:white;
+    background:black;
+}
+::placeholder{
+	color:white;
+}
+.submit
+{
+	width: 83%;
+    text-align: center;
+    background: white;
+    color: black;
+    border-bottom: none;
+    box-shadow: 0 0 0.5rem 0.15rem black;
+    font-weight: 800;
+}
+.submit:hover
+{
+	border-top:1px solid darkmagenta;
+	border-right:none;
+	border-bottom:darkmagenta;
+	box-shadow:0 0 0.5em 0.15em white;
+	color:white;
+	background:darkmagenta;
+}
+.Signup
+{
+	background: khaki;
+    font-family: system-ui;
+    color: black;
+    margin: 14px 0px;
+    font-size: larger;
+    border-bottom: none;
+    width: 156px;
+    
+}
+.click
+{
+    font-size: larger;
+    text-decoration: none;
+    margin: 0px 10px;
+    color: white;
+    border-radius: 25px;
+    transition:0.5s smooth;
+    border-bottom: 2px solid white;
+}
+.click:hover{
+	background:black;
+	box-shadow: 0 0 0.5em 0.15em black;
+}
+@media screen and (min-width: 0px) and (max-width: 480px)
+{
+	@Keyframes swipe
+{
+	0%
+	{
+	   transform:translatey(-110vw);
+	}
+	50%
+	{
+	   transform:translatey(36vw);
+	}
+}
+	
+	@Keyframes slide{
+0% {
+    background-image: url(BG/L1.jpg);
+}
+25% {
+    background-image: url(BG/L2.jpg);
+}
+50% {
+    background-image: url(BG/L3.jpg);
+}
+75% {
+    background-image: url(BG/L4.jpg);
+}
+100% {
+    background-image: url(BG/L1.jpg);
+}
+}	
+	body{
+	background-image: url("BG/L1.jpg");
+	}
+	.form{	
+	margin: auto;
+    transform: translateY(36vw);
+}
+}
+@media screen and (min-width: 480px) and (max-width: 768px)
+{
+	@Keyframes swipe
+{
+	0%
+	{
+	   transform:translatey(-69vw);
+	}
+	50%
+	{
+	   transform:translatey(34vw);
+	}
+}
+	
+	@Keyframes slide{
+0% {
+    background-image: url(BG/L11.jpg);
+}
+25% {
+    background-image: url(BG/L22.jpg);
+}
+50% {
+    background-image: url(BG/L33.jpg);
+}
+75% {
+    background-image: url(BG/L44.jpg);
+}
+100% {
+    background-image: url(BG/L11.jpg);
+}
+}
+	body{
+	background-image: url("BG/L11.jpg");
+	}
+	.form{
+	margin: auto;
+    padding: 4em 7em;
+    transform: translatey(34vw);
+	}
+}

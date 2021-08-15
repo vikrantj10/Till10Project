@@ -1,0 +1,161 @@
+@charset "ISO-8859-1";
+*{
+	padding:0px;
+	margin:0px;
+}
+.body
+{
+	background-image: url("BG/S1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation : bg 20s 5s forwards;
+	animation-iteration-count: infinite;
+}
+@Keyframes bg{
+	0%
+	{
+	background-image: url("BG/Lc.jpg");
+	}
+	25%
+	{
+	background-image: url("BG/Cl3.jpg");
+	}
+	50%
+	{
+	background-image: url("BG/Ll2.jpg");
+	}
+	75%
+	{
+	background-image: url("BG/Cn.jpg");
+	}
+	100%{
+	background-image: url("BG/Lc.jpg");
+	}
+}
+.form
+{
+    border: 1px solid black;
+    background: rgba( 255, 255, 255, 0.35 );
+    text-align: center;
+    padding: 8px 40px;
+    margin: 6rem 24rem;
+    border-radius:1.5rem;
+    box-shadow:0 0 0.5em 0.15em black;
+    width: 322px;
+    font-family: sans-serif;
+    font-size: inherit;
+    font-weight:800;
+    transform:translate(3vw);
+}
+input
+{
+ text-align: center; 
+ margin: 8px 6px;
+ padding: 5px 18px;
+ font-weight: 800;
+ border-bottom: 1px solid black;
+ font-size: inherit;
+ background: black;
+ text-shadow:0 0 1.5em darkmagenta;
+ border-top: 0;
+ border-left: 0;
+ border-right: 0;
+ border-radius:5rem;
+ color:white;
+}
+::placeholder{
+	color:white;
+}
+h1
+{
+	padding: 18px 7px;
+    background: black;
+    color: white;
+    margin: 21px 10px;
+    font-family: emoji;
+    cursor:default;
+    transition:0.5s smooth;
+}
+.submit
+{
+	background: black;
+    font-family: unset;
+    color: white;
+    transition:0.5s smooth;
+}
+.submit:hover{
+	transform:scale(1.1);
+	background:darkmagenta;
+	box-shadow:0 0 0.5em 0.15em white;
+}
+@media screen and (min-width: 0px) and (max-width: 480px)
+{
+	body{
+	background:blue;	
+	}
+	.form{
+	margin: auto;
+    width: 18rem;
+    padding: 0em 1em;
+    transform: translateY(31vw);
+    margin-left: 1.2em
+	}
+	@Keyframes bg{
+	0%
+	{
+	background-image: url("BG/S1.jpg");
+	}
+	25%
+	{
+	background-image: url("BG/S2.jpg");
+	}
+	50%
+	{
+	background-image: url("BG/S3.jpg");
+	}
+	75%
+	{
+	background-image: url("BG/S4.jpg");
+	}
+	100%{
+	background-image: url("BG/S1.jpg");
+	}
+}
+	
+}
+@media screen and (min-width: 480px) and (max-width: 768px)
+{
+	
+	body{
+	background-image: url("BG/S11.jpg");
+	}
+	.form{
+    margin: auto;
+    width: 18rem;
+    padding: 6em 5em;
+    transform: translateY(27vw);
+    margin-left: 10.2em;
+	}
+	@Keyframes bg{
+	0%
+	{
+	background-image: url("BG/S11.jpg");
+	}
+	25%
+	{
+	background-image: url("BG/S22.jpg");
+	}
+	50%
+	{
+	background-image: url("BG/S33.jpg");
+	}
+	75%
+	{
+	background-image: url("BG/S44.jpg");
+	}
+	100%{
+	background-image: url("BG/S11.jpg");
+	}
+}
+	
+}
